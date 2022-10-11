@@ -10,7 +10,7 @@ import math
 
 
 def calculate(a, b):
-    result = math.sqrt((math.fabs(a[0] - b[0]) ** 2) + (math.fabs(a[1] - b[1]) ** 2))
+    result = math.sqrt((a[0] - b[0]) ** 2 + (a[1] - b[1]) ** 2)
     print(f'A ({a[0]}, {a[1]}); B ({b[0]}, {b[1]}) -> {result:<.2f}')
 
 
