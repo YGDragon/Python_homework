@@ -9,13 +9,13 @@ def check_area(value):
     while value not in area_list:
         print('Неверный ввод!', end=' ')
         value = input('Требуется ввод номера от 1 до 4: ')
-    if value in area_list[0]:
+    if value == area_list[0]:
         print(f'Четверть №{value} -> (x > 0; y > 0)')
-    elif value in area_list[1]:
+    elif value == area_list[1]:
         print(f'Четверть №{value} -> (x < 0; y > 0)')
-    elif value in area_list[2]:
+    elif value == area_list[2]:
         print(f'Четверть №{value} -> (x < 0; y < 0)')
-    elif value in area_list[3]:
+    elif value == area_list[3]:
         print(f'Четверть №{value} -> (x > 0; y < 0)')
 
 
