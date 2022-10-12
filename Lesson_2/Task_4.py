@@ -33,9 +33,9 @@ def r_check(data):
     lst = [0, 0]
     # ввод нижнего индекса
     lst[0] = n1_check(inp_check(input('нижний индекс: ')))
-    while lst[0] > len(data) - 1:
+    while lst[0] >= len(data) - 1:
         print('Ошибка ввода!')
-        lst[0] = n1_check(inp_check(input(f'- > требуется ввод нижнего индекса < {len(data)}: -> ')))
+        lst[0] = n1_check(inp_check(input(f'- > требуется ввод нижнего индекса < {len(data) - 1}: -> ')))
     # ввод верхнего индекса
     lst[1] = n0_check(inp_check(input('верхний индекс: ')))
     while (lst[0] >= lst[1] or lst[1] > len(data) - 1):
