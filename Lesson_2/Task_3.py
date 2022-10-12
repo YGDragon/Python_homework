@@ -40,4 +40,4 @@ def check_neg(value):
 
 num = check_neg(check_in(input('Введите число: ')))
 print(f'Для n = {num} -> {sequence(num)}')
-print(sum(sequence(num)))
+print(f'Сумма {sum(sequence(num))})
