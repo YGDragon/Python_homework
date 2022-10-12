@@ -5,39 +5,38 @@
 # Сумма 9.06
 
 
+# формирование последовательности чисел
 def sequence(value):
     value = int(value)
     result = []
-    sum = 0
     for i in range(1, value + 1):
         result.append(round((1 + 1 / i) ** i, 2))
-        sum += result[i - 1]
-        i += 1
     return result
 
 
-def check_in(value):
+# проверка ввода числа
+def inp_check(value):
     while type(value) == str:
         try:
             int(value)
         except ValueError:
-            print('Ошибка ввода!', end=' ')
-            print(f'Требуется ввести целое число : ', end='')
+            print('Ошибка ввода!')
+            print(f'-> требуется ввод целого числа: -> ', end='')
             value = input()
         else:
             break
     return int(value)
 
 
-def check_neg(value):
+# проверка ввода числа
+def n0_check(value):
     while value <= 0:
-        print('Ошибка ввода!', end=' ')
-        print(f'Введите положительное число: ', end='')
-        value = input()
-        value = check_in(value)
+        print('Ошибка ввода!')
+        print(f'-> требуется ввод числа > 0: -> ', end='')
+        value = inp_check(input())
     return int(value)
 
 
-num = check_neg(check_in(input('Введите число: ')))
-print(f'Для n = {num} -> {sequence(num)}')
-print(f'Сумма {sum(sequence(num))}')
+num = n0_check(inp_check(input('ввод числа: ')))
+print(f'для n = {num} -> {sequence(num)}')
+print(f'сумма {sum(sequence(num))}')
