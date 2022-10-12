@@ -6,6 +6,7 @@
 # - 187,6778 -> 44
 
 
+# вычисление суммы цифр
 def sum_num(value):
     sum = 0
     for i in value:
@@ -13,18 +14,19 @@ def sum_num(value):
     return sum
 
 
+# проверка ввода числа
 def check_input(value):
     while type(value) == str:
         try:
             float(value)
         except ValueError:
-            print('Ошибка ввода!', end=' ')
-            print(f'Требуется ввести число : ', end='')
+            print('Ошибка ввода!')
+            print(f'-> требуется ввести число: -> ', end='')
             value = input()
         else:
             break
     return value
 
 
-num = check_input(input('Введите вещественное число: '))
+num = check_input(input('введите вещественное число: '))
 print(f'{num} -> {sum_num(num)}')
