@@ -8,10 +8,10 @@
 
 # вычисление суммы цифр
 def sum_num(value):
-    sum = 0
+    result = 0
     for i in value:
-        sum += 0 if i == '.' or i == '-' else int(i)
-    return sum
+        result += 0 if i == '.' or i == '-' else int(i)
+    return result
 
 
 # проверка ввода числа
