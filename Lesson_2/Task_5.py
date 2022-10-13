@@ -1,44 +1,41 @@
-# 5. Реализуйте алгоритм перемешивания элементов списка.
-# Без функции shuffle из модуля random, другие методы использовать можно.
-3. Пробегаемся по всем элементам слева
-от первого до последнего и меняет текущий
-элемент со случайным элементом из правой части
-местами.
+# # 5. Реализуйте алгоритм перемешивания элементов списка.
+# # Без функции shuffle из модуля random, другие методы использовать можно.
 
-def sequence(lst):
-    from random import randint
-    for i in range(6):
-        lst.append(randint(0, 6))
-    return lst
-    
-def mix(lst):
-    from random import choice
-    for i in range(len(lst)):
-        n0 = lst[i]
-        cnt = lst.count(n0)
-        print(f'cnt -> {cnt}')
-        lst.pop(i)
-        print(f'i -> {i}', end='   ')
-        print(f'n0 -> {n0}')
-        print(f'промежуточный {lst}')
-        n1 = 0
-        idx = 0
-        if n0 not in lst:
-            cnt0 = 0
-            n1 = choice(lst)
-            idx = lst.index(n1)
-            print(f'idx -> {idx}', end='   ')
-            print(f'n1 -> {n1}')
-            lst.insert(i, n1)
-            lst.pop(idx + 1)
-            lst.insert(idx  + 1, n0)
+# проверка ввода числа
+def inp_check(value):
+    while type(value) == str:
+        try:
+            int(value)
+        except ValueError:
+            print('Ошибка ввода!')
+            print(f'-> требуется ввод целого числа: -> ', end='')
+            value = input()
         else:
-            lst.insert(i, n0)
-        print(f'новый -> {lst}')
-        print('')
-    return lst
-    
-lst = []
-print(lst)
-print(sequence(lst))
-print(f'перемешанный список -> {mix(lst)}')
+            break
+    return int(value)
+
+
+# проверка ввода числа
+def n0_check(value):
+    while value <= 0:
+        print('Ошибка ввода!')
+        print(f'-> требуется ввод числа > 0: -> ', end='')
+        value = inp_check(input())
+    return int(value)
+
+
+# алгоритм перемешивания элементов списка
+def mix(data, size):
+    data_1 = [i for i in range(0, size)]
+    from random import choice
+    for i in range(size):
+        num = choice(data)
+        idx = data.index(num)
+        data_1[i] = num
+        data.pop(idx)
+    return data_1
+
+num = n0_check(inp_check(input('ввод длины списка: ')))
+lst = [i for i in range(0, num)]
+print(f'....исходный список -> {lst}')
+print(f'перемешанный список -> {mix(lst, num)}')
