@@ -38,5 +38,5 @@ def n0_check(value):
     return int(value)
 
 
-num = n0_check(inp_check(input('введите число: ')))
-print(f'N = {num} -> {mult_num(num)}')
+number = n0_check(inp_check(input('введите число: ')))
+print(f'N = {number} -> {mult_num(number)}')

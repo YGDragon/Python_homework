@@ -37,6 +37,6 @@ def n0_check(value):
     return int(value)
 
 
-num = n0_check(inp_check(input('ввод числа: ')))
-print(f'для n = {num} -> {sequence(num)}')
-print(f'сумма {sum(sequence(num))}')
+number = n0_check(inp_check(input('ввод числа: ')))
+print(f'для n = {number} -> {sequence(number)}')
+print(f'сумма {sum(sequence(number))}')

@@ -35,7 +35,8 @@ def mix(data, size):
         data.pop(idx)
     return data_1
 
-num = n0_check(inp_check(input('ввод длины списка: ')))
-lst = [i for i in range(0, num)]
+
+number = n0_check(inp_check(input('ввод длины списка: ')))
+lst = [i for i in range(0, number)]
 print(f'....исходный список -> {lst}')
-print(f'перемешанный список -> {mix(lst, num)}')
+print(f'перемешанный список -> {mix(lst, number)}')

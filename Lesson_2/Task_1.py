@@ -27,5 +27,5 @@ def check_input(value):
     return value
 
 
-num = check_input(input('введите вещественное число: '))
-print(f'{num} -> {sum_num(num)}')
+number = check_input(input('введите вещественное число: '))
+print(f'{number} -> {sum_num(number)}')

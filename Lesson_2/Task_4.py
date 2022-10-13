@@ -10,44 +10,6 @@
 # больше длины списка, меньше нуля, первый больше второго и т.п.
 
 
-# формирование списка элементов
-def lst_inp(n_lst):
-    from random import randint
-    lst = []
-    for i in range(-n_lst, n_lst + 1):
-        lst.append(randint(-n_lst, n_lst))
-    print(f'список элементов {lst}')
-    return lst
-
-
-# нахождение произведения элементов списка
-def n_mult(data):
-    n = r_check(data)
-    data_cut = data[n[0]: n[1] + 1]
-    from math import prod
-    print(f'индексы от {n[0]} до {n[1]} -> произведение для {data_cut} равно {prod(data_cut)}')
-
-
-# проверка ввода индексов
-def r_check(data):
-    lst = [0, 0]
-    # ввод нижнего индекса
-    lst[0] = n1_check(inp_check(input('нижний индекс: ')))
-    while lst[0] >= len(data) - 1:
-        print('Ошибка ввода!')
-        lst[0] = n1_check(inp_check(input(f'- > требуется ввод нижнего индекса < {len(data) - 1}: -> ')))
-    # ввод верхнего индекса
-    lst[1] = n0_check(inp_check(input('верхний индекс: ')))
-    while (lst[0] >= lst[1] or lst[1] > len(data) - 1):
-        print('Ошибка ввода!')
-        if lst[1] > len(data) - 1:
-            print(f'- > требуется ввод верхнего индекса < {len(data)} -> ', end='')
-        elif lst[0] >= lst[1]:
-            print(f'- > требуется ввод верхнего индекса > {lst[0]} -> ', end='')
-        lst[1] = n0_check(inp_check(input()))
-    return lst
-
-
 # проверка ввода чисел
 def inp_check(value):
     while type(value) == str:
@@ -80,5 +42,43 @@ def n1_check(value):
     return int(value)
 
 
-num = n0_check(inp_check(input('введите число: ')))
-n_mult(lst_inp(num))
+# проверка ввода индексов
+def r_check(data):
+    lst = [0, 0]
+    # ввод нижнего индекса
+    lst[0] = n1_check(inp_check(input('нижний индекс: ')))
+    while lst[0] >= len(data) - 1:
+        print('Ошибка ввода!')
+        lst[0] = n1_check(inp_check(input(f'- > требуется ввод нижнего индекса < {len(data) - 1}: -> ')))
+    # ввод верхнего индекса
+    lst[1] = n0_check(inp_check(input('верхний индекс: ')))
+    while lst[0] >= lst[1] or lst[1] > len(data) - 1:
+        print('Ошибка ввода!')
+        if lst[1] > len(data) - 1:
+            print(f'- > требуется ввод верхнего индекса < {len(data)} -> ', end='')
+        elif lst[0] >= lst[1]:
+            print(f'- > требуется ввод верхнего индекса > {lst[0]} -> ', end='')
+        lst[1] = n0_check(inp_check(input()))
+    return lst
+
+
+# формирование списка элементов
+def lst_inp(n_lst):
+    from random import randint
+    lst = []
+    for i in range(-n_lst, n_lst + 1):
+        lst.append(randint(-n_lst, n_lst))
+    print(f'список элементов {lst}')
+    return lst
+
+
+# нахождение произведения элементов списка
+def n_mult(data):
+    n = r_check(data)
+    data_cut = data[n[0]: n[1] + 1]
+    from math import prod
+    print(f'индексы от {n[0]} до {n[1]} -> произведение для {data_cut} равно {prod(data_cut)}')
+
+
+number = n0_check(inp_check(input('введите число: ')))
+n_mult(lst_inp(number))
