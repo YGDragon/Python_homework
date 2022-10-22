@@ -9,13 +9,11 @@
 
 
 def function(n):
-    from math import sqrt
-    from math import ceil
     u_lst = []
     if n % 2 == 0:
         u_lst = [2]
         n = n // 2
-    for i in range(3, ceil(sqrt(n))):
+    for i in range(3, n):
         if i % 2 != 0 and n % i == 0:
             count = 0
             for j in range(2, i):
