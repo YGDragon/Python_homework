@@ -15,11 +15,11 @@ def function(n):
         n = n // 2
     for i in range(3, n):
         if i % 2 != 0 and n % i == 0:
-            count = 0
+            cnt = 0
             for j in range(2, i):
                 if i % j == 0:
-                    count += 1
-            if count == 0:
+                    cnt += 1
+            if cnt == 0:
                 n /= i
                 u_lst.append(i)
     return u_lst

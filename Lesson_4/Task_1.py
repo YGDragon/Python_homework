@@ -23,13 +23,13 @@ def nilacant(num):
     res = 3
     i = 2
     j = 4
-    count = 0
+    cnt = 0
     while abs(res - n_pi) >= num:
         res += 4 / (i * (i + 1) * (i + 2)) - 4 / (j * (j + 1) * (j + 2))
         i += 4
         j += 4
-        count += 1
-    new_val = (res, count, res - n_pi)
+        cnt += 1
+    new_val = (res, cnt, res - n_pi)
     return new_val
 
 
