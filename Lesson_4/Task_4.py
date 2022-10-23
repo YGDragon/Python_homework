@@ -24,19 +24,31 @@
 """
 from random import randint
 
-def create_coeffs(num: int) -> list:
-    return [randint(1, 100) for _ in range(num + 1)]
+
+# функция формирования полинома
+def cof_list(num):
+    lst = [randint(0, 5) for _ in range(num + 1)]
+    print(f'полином коэффициентов -> {lst}')
+    return lst
 
 
-def create_str(list_coeff: list) -> str:
-    lenght = len(list_coeff)
-    lst_str = [f"{el}*x^{lenght - idx - 1}" for idx, el in enumerate(list_coeff)]
-    return " + ".join(lst_str)
+# функция формирование строки-полинома
+def new_str(cof):
+    size = len(cof) - 1
+    row = [f'{el}*x^{size - i}' for i, el in enumerate(cof) if el > 0 and i < size - 1]
+    if cof[-2] == 1:
+        row.append('x')
+    elif 0 != cof[-2] != 1:
+        row.append(f'{cof[-2]}*x')
+    if cof[-1] > 0:
+        row.append(f'{cof[-1]}')
+    return " + ".join(row) + ' = 0'
 
 
-def write_to_file(polynom_string: str, filename: str) -> None:
+# функция записи строки-полинома в файл
+def wr_to_file(filename, polynom):
     with open(filename, mode="w", encoding="utf-8") as file:
-        file.write(polynom_string)
+        file.write(polynom)
 
-write_to_file(create_str(create_coeffs(10)), "test.txt")
 
+wr_to_file("polynom.txt", new_str(cof_list(3)))
