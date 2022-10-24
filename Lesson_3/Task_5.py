@@ -10,7 +10,7 @@
 def inp_check(numb):
     while not numb.isdigit():
         print('ошибка ввода!')
-        numb = input('-> повторный ввод количества идексов: ')
+        numb = input('-> повторный ввод числа: ')
     return numb
 
 
@@ -33,7 +33,7 @@ def fib(n):
 
 
 result_lst = []
-unum = int(inp_check(input('ввод количества идексов: ')))
+unum = int(inp_check(input('ввод числа: ')))
 for i in range(-unum, unum + 1):
     if i < 0:
         result_lst.append(neg_fib(i))
