@@ -10,8 +10,8 @@ def check(num):
 
 
 # функция проверки по количеству кофет
-def min_max(num, limit0, limit1):
-    while num == limit0 or num > limit1:
+def min_max(num, lim0, lim1):
+    while num <= lim0 - 1 or num > lim1:
         print(f'Ошибка по количеству конфет!', end=' ')
         num = int(check(input(f'Попробуй еще раз: ')))
     return num
