@@ -65,7 +65,7 @@ def gen1_list(t_lst, g_lst) -> list:
 
 
 # решение задачи "одну строку" в виде comprehensions
-def gen2_list(t_lst, g_lst):
+def gen2_list(t_lst, g_lst) -> list:
     pair = [(t_lst[i], g_lst[i]) if i < len(g_lst) else (t_lst[i], None) for i in range(len(t_lst))]
     return pair
 

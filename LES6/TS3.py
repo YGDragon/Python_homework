@@ -12,3 +12,11 @@
                     src = [300, 2, 12, 44, 1, 1, 4, 10, 7, 1, 78, 123, 55]
                     result = [12, 44, 4, 10, 78, 123]
 """
+
+
+def gen_list(num_lst) -> list:
+    return [num_lst[i] for i in range(len(num_lst)) if num_lst[i] > num_lst[i - 1] and i > 0]
+
+
+src = [300, 2, 12, 44, 1, 1, 4, 10, 7, 1, 78, 123, 55]
+print(f'src = {src}\nresult = {gen_list(src)}')
