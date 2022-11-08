@@ -14,12 +14,11 @@ b) Подумайте как наделить бота "интеллектом"
    Подумайте об алгоритме игры. Здесь есть ключевые числа количества конфет, которые точно определят победу.
 """
 from random import randint
-from check_functions import check
-from check_functions import min_max
+from check_functions import check, min_max
 # алгоритм - задача Баше
 rand = randint(1, 2)
 gamer = [rand, 1 if rand == 2 else 2]
-user = {1: 'GAMER-1', 2: 'GAMER-2'}
+user = {1: 'BOT', 2: 'GAMER'}
 total = 220
 lim0 = 1
 lim1 = 28
@@ -29,7 +28,12 @@ print(f'На столе {total} конфет')
 print(f'Ходит {user[rand]}')
 while move < total:
     for u in gamer:
-        move += min_max(check(input(f'Ход №{step} -> {user[u]}: ')), lim0, lim1)
+        if u == 1:
+            n_bot = randint(lim0, lim1)
+            move += n_bot
+            print(f'Ход №{step} -> {user[1]}: {n_bot}')
+        elif u == 2:
+            move += min_max(check(input(f'Ход №{step} -> {user[u]}: ')), lim0, lim1)
         step += 1
         res = total - move
         print(f'\t\t\t\t\t\tОсталось конфет {res}')
