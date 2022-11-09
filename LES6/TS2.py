@@ -52,15 +52,11 @@
 # решение задачи с использованием циклов
 def gen1_list(t_lst, g_lst) -> list:
     pair = []
-    idx = 0
-    for name in t_lst:
-        while idx < len(t_lst):
-            if idx < len(g_lst):
-                pair.append((name, g_lst[idx]))
-                idx += 1
-            else:
-                pair.append((name, None))
-            break
+    for i in range(len(t_lst)):
+        if i < len(g_lst):
+            pair.append((t_lst[i], g_lst[i]))
+        else:
+            pair.append((t_lst[i], None))
     return pair
 
 
@@ -69,6 +65,15 @@ def gen2_list(t_lst, g_lst) -> list:
     pair = [(t_lst[i], g_lst[i]) if i < len(g_lst) else (t_lst[i], None) for i in range(len(t_lst))]
     return pair
 
+
+# решение задачи с использованием zip и zip_longest
+def gen3_list(t_lst, g_lst):
+    from itertools import zip_longest
+    if len(g_lst) < len(t_lst):
+        pair = list(zip_longest(t_lst, g_lst, fillvalue=None))
+    else:
+        pair = list(zip(t_lst, g_lst))
+    return pair
 
 # печать итогового списка
 def print_list(list_tpl):
@@ -89,10 +94,8 @@ groups2 = [
 ]
 print('Результат, где учеников меньше')
 print(f'\tУченики: {tutors}, \n\tКлассы: {groups1}')
-print_list(gen1_list(tutors, groups1))
-
+print_list(gen3_list(tutors, groups1))
 
 print('\nРезультат, где учеников больше')
 print(f'\tУченики: {tutors}, \n\tКлассы: {groups2}')
-print_list(gen1_list(tutors, groups2))
-print()
+print_list(gen3_list(tutors, groups2))
