@@ -5,8 +5,7 @@
 
 
 def gen_list(n: int) -> list:
-    lst = [el for el in range(0, n) if (el ** 2 < 200 and el % 2 != 0)]
-    return lst
+    return [el for el in range(0, n) if (el ** 2 < 200 and el % 2 != 0)]
 
 
 num = 20
