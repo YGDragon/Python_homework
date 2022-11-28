@@ -1,9 +1,9 @@
-import conf_
+import conf
 from model import *
 
 
 def main() -> None:
-    my_token = conf_.TOKEN
+    my_token = conf.TOKEN
     application = Application.builder().token(my_token).build()
     application.add_handler(CommandHandler("start", start))
     application.add_handler(CommandHandler("help", help_command))
