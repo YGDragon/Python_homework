@@ -1,0 +1,223 @@
+Measure,,Value
+Bus Passengers,1996,64
+Bus Passengers,1997,783
+Bus Passengers,1998,50
+Bus Passengers,1999,1016
+Bus Passengers,2000,1118
+Bus Passengers,2003,0
+Bus Passengers,2004,526
+Bus Passengers,2005,1487
+Bus Passengers,2007,426
+Bus Passengers,2008,14637
+Bus Passengers,2009,12061
+Bus Passengers,2011,2752
+Bus Passengers,2013,530
+Bus Passengers,2014,247
+Bus Passengers,2015,1267
+Bus Passengers,2017,1292
+Bus Passengers,2018,7483
+Bus Passengers,2019,257734
+Bus Passengers,2020,106394
+Bus Passengers,2021,188126
+Bus Passengers,2022,281440
+Buses,1996,3404
+Buses,1997,268
+Buses,1998,3093
+Buses,1999,128
+Buses,2000,197
+Buses,2001,264
+Buses,2002,4168
+Buses,2003,15
+Buses,2004,156
+Buses,2005,12
+Buses,2006,128
+Buses,2007,53
+Buses,2009,2402
+Buses,2010,1043
+Buses,2011,611
+Buses,2012,12
+Buses,2013,642
+Buses,2014,792
+Buses,2015,912
+Buses,2016,19
+Buses,2017,5
+Buses,2018,73
+Buses,2019,7533
+Buses,2020,15636
+Buses,2021,11369
+Buses,2022,34209
+Pedestrians,1997,0
+Pedestrians,1999,40591
+Pedestrians,2000,0
+Pedestrians,2001,29863
+Pedestrians,2002,26516
+Pedestrians,2003,0
+Pedestrians,2005,0
+Pedestrians,2007,89560
+Pedestrians,2008,568
+Pedestrians,2009,10000
+Pedestrians,2010,22
+Pedestrians,2012,61909
+Pedestrians,2014,467114
+Pedestrians,2015,429703
+Pedestrians,2018,43
+Pedestrians,2019,2538371
+Pedestrians,2020,3284066
+Pedestrians,2021,3497992
+Pedestrians,2022,6876511
+Personal Vehicle Passengers,2007,9687
+Personal Vehicle Passengers,2008,570097
+Personal Vehicle Passengers,2009,346053
+Personal Vehicle Passengers,2010,4442
+Personal Vehicle Passengers,2011,455486
+Personal Vehicle Passengers,2012,222605
+Personal Vehicle Passengers,2013,1331682
+Personal Vehicle Passengers,2014,6797
+Personal Vehicle Passengers,2015,59605
+Personal Vehicle Passengers,2016,744756
+Personal Vehicle Passengers,2017,1079711
+Personal Vehicle Passengers,2018,2034151
+Personal Vehicle Passengers,2019,9181282
+Personal Vehicle Passengers,2020,11500574
+Personal Vehicle Passengers,2021,8028506
+Personal Vehicle Passengers,2022,29836989
+Personal Vehicles,1998,710
+Personal Vehicles,1999,1737
+Personal Vehicles,2002,2515
+Personal Vehicles,2006,86646
+Personal Vehicles,2007,15727
+Personal Vehicles,2008,234628
+Personal Vehicles,2009,204004
+Personal Vehicles,2010,63338
+Personal Vehicles,2011,427648
+Personal Vehicles,2012,2014313
+Personal Vehicles,2013,76132
+Personal Vehicles,2014,672
+Personal Vehicles,2015,1172
+Personal Vehicles,2016,114531
+Personal Vehicles,2017,328320
+Personal Vehicles,2018,1316
+Personal Vehicles,2019,5660144
+Personal Vehicles,2020,6537552
+Personal Vehicles,2021,4163077
+Personal Vehicles,2022,15934826
+Rail Containers Empty,2008,583
+Rail Containers Empty,2009,6296
+Rail Containers Empty,2010,146
+Rail Containers Empty,2011,2486
+Rail Containers Empty,2012,23
+Rail Containers Empty,2013,14123
+Rail Containers Empty,2016,7476
+Rail Containers Empty,2017,105
+Rail Containers Empty,2018,614
+Rail Containers Empty,2019,137749
+Rail Containers Empty,2020,56598
+Rail Containers Empty,2021,129098
+Rail Containers Empty,2022,294367
+Rail Containers Loaded,2007,1400
+Rail Containers Loaded,2008,36633
+Rail Containers Loaded,2010,5542
+Rail Containers Loaded,2011,11921
+Rail Containers Loaded,2012,41
+Rail Containers Loaded,2013,7558
+Rail Containers Loaded,2015,188
+Rail Containers Loaded,2016,2405
+Rail Containers Loaded,2017,12730
+Rail Containers Loaded,2018,1031
+Rail Containers Loaded,2019,159850
+Rail Containers Loaded,2020,139299
+Rail Containers Loaded,2021,133213
+Rail Containers Loaded,2022,574224
+Train Passengers,1999,0
+Train Passengers,2001,0
+Train Passengers,2003,0
+Train Passengers,2004,0
+Train Passengers,2007,14
+Train Passengers,2011,666
+Train Passengers,2012,103
+Train Passengers,2016,87
+Train Passengers,2018,168
+Train Passengers,2019,5488
+Train Passengers,2020,2455
+Train Passengers,2021,8410
+Train Passengers,2022,32106
+Trains,1996,410
+Trains,1997,812
+Trains,1998,587
+Trains,1999,923
+Trains,2000,31
+Trains,2001,219
+Trains,2002,337
+Trains,2003,0
+Trains,2004,0
+Trains,2005,198
+Trains,2006,0
+Trains,2007,410
+Trains,2010,57
+Trains,2011,19
+Trains,2012,17
+Trains,2014,14
+Trains,2015,292
+Trains,2016,108
+Trains,2017,149
+Trains,2018,122
+Trains,2019,2047
+Trains,2020,3653
+Trains,2021,1652
+Trains,2022,6579
+Truck Containers Empty,2007,21006
+Truck Containers Empty,2008,2860
+Truck Containers Empty,2009,26372
+Truck Containers Empty,2011,9740
+Truck Containers Empty,2012,58856
+Truck Containers Empty,2013,21307
+Truck Containers Empty,2014,378
+Truck Containers Empty,2015,12243
+Truck Containers Empty,2016,2818
+Truck Containers Empty,2017,18340
+Truck Containers Empty,2019,286051
+Truck Containers Empty,2020,132311
+Truck Containers Empty,2021,278544
+Truck Containers Empty,2022,714133
+Truck Containers Loaded,2008,149
+Truck Containers Loaded,2009,33
+Truck Containers Loaded,2010,22277
+Truck Containers Loaded,2011,6939
+Truck Containers Loaded,2012,150248
+Truck Containers Loaded,2013,11969
+Truck Containers Loaded,2014,186144
+Truck Containers Loaded,2015,7264
+Truck Containers Loaded,2016,3585
+Truck Containers Loaded,2017,585
+Truck Containers Loaded,2018,3168
+Truck Containers Loaded,2019,746127
+Truck Containers Loaded,2020,502641
+Truck Containers Loaded,2021,621086
+Truck Containers Loaded,2022,2218638
+Trucks,1996,683529
+Trucks,1997,9009
+Trucks,1998,407837
+Trucks,1999,179923
+Trucks,2000,12250
+Trucks,2001,166254
+Trucks,2002,28777
+Trucks,2003,14731
+Trucks,2004,14420
+Trucks,2005,22651
+Trucks,2006,9401
+Trucks,2007,11436
+Trucks,2008,107462
+Trucks,2009,926
+Trucks,2010,11206
+Trucks,2011,22142
+Trucks,2012,60104
+Trucks,2013,9870
+Trucks,2014,147640
+Trucks,2015,1326
+Trucks,2016,25692
+Trucks,2017,6093
+Trucks,2018,8019
+Trucks,2019,1020427
+Trucks,2020,1238122
+Trucks,2021,890460
+Trucks,2022,2765123
